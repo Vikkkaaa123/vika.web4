@@ -1,0 +1,113 @@
+header {
+    background-color: #000099;
+    display: grid;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.picture-logo:hover {
+    animation: spin 1.5s infinite;
+}
+
+nav {
+    display: grid;
+    background-color: #CCFFFF;
+}
+
+nav a {
+    color: midnightblue;
+    text-decoration: none;
+
+}
+
+body {
+    background-color: #66CCFF;
+    font-size: 120%;
+}
+
+.content {
+    display: grid;
+    color: indigo;
+    background-color: #CCFFFF;
+}
+
+header h1{
+    color: darkgoldenrod;
+}
+
+
+table {
+    border: 1px solid blue;
+    border-collapse: separate;
+    empty-cells: hide;
+}
+
+#table1Caption {
+    font-size: 25px;
+}
+
+th, td {
+    border: 2px solid black;
+}
+
+tr:nth-child(odd) {
+    background-color: #66CCCC;
+    color: mediumblue;
+}
+
+tr:nth-child(even) {
+    background-color: #00CCFF;
+    color: gold;
+}
+
+footer {
+    color: darkblue;
+    background-color: #0099FF;
+    min-height: 75px;
+}
+
+form {
+    display: grid;
+}
+
+form button {
+    height: 50px;
+    background-color: #99FFFF;
+}
+
+form textarea {
+    height: 200px;
+}
+
+@media screen and (min-width: 800px) {
+    .content {
+        color: indigo;
+        background-color: #CCCCFF;
+        max-width: 960px;
+    }
+
+    .content ul {
+        order: -1;
+    }
+
+    header {
+        display: block;
+    }
+
+    nav {
+        display: block;
+        float: right;
+        height: 50px;
+        align-content: center;
+        background-color: #3366FF;
+    }
+
+    header h1 {
+        align-content: center;
+    }
+
+}
